@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import './Input.css';
 import axios from 'axios';
-import BACKEND_URL from '../config';
 import GraphVisualizer from './GraphVisualizer';
+
 
 function Input() {
     const [numRouters, setNumRouters] = useState('');
@@ -12,6 +12,9 @@ function Input() {
     const [routingTable, setRoutingTable] = useState(null);
     const [adjacencyMatrix, setAdjacencyMatrix] = useState([]);
 
+    
+    const BACKEND_URL=process.env.REACT_APP_API_BACKEND_URL
+    
     useEffect(() => {
         if (numRouters) {
             const matrix = Array.from({ length: parseInt(numRouters) }, () => Array(parseInt(numRouters)).fill(0));
