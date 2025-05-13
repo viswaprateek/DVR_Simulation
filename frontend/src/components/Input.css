@@ -1,0 +1,177 @@
+/* Input.css */
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8fbfd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3, h4, h5, h6 {
+    color: #1a5276;
+    font-weight: 700;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #154360;
+}
+
+.form-control {
+    border: 1px solid #85c1e9;
+    border-radius: 5px;
+    padding: 8px 12px;
+    background-color: #eaf2f8;
+    color: #154360;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1f618d;
+}
+
+.btn-secondary {
+    background-color: #85c1e9;
+    border-color: #85c1e9;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #5dade2;
+}
+
+.btn-info {
+    background-color: #48c9b0;
+    border-color: #48c9b0;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.btn-info:hover {
+    background-color: #1abc9c;
+}
+
+.links-table-container, .routing-table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column; /* Stack each routing table vertically */
+    align-items: center; /* Center-align each routing table */
+}
+
+.links-table, .routing-table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #f2f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.links-table th, .routing-table th {
+    background-color: #2980b9;
+    color: #ecf0f1;
+    font-weight: 500;
+    padding: 12px;
+    text-align: left;
+}
+
+.links-table td, .routing-table td {
+    border: 1px solid #d5dbdb;
+    padding: 10px;
+    color: #2c3e50;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.links-table input[type="number"] {
+    width: 70px;
+    padding: 5px;
+    border: 1px solid #d5dbdb;
+    border-radius: 4px;
+    background-color: #eaf2f8;
+    color: #154360;
+}
+
+.links-table tbody tr:nth-child(even),
+.routing-table tbody tr:nth-child(even) {
+    background-color: #eaf2f8;
+}
+
+.links-table tbody tr:nth-child(odd),
+.routing-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.links-table td:hover,
+.routing-table td:hover {
+    background-color: #d5f5e3;
+    cursor: pointer;
+}
+
+.routing-table-container h6 {
+    color: #2874a6;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+
+.routing-table {
+    border: 1px solid #aab7b8;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f4f6f7;
+    display: flex;
+    justify-content: center;
+}
+
+.routing-table-container h4, .routing-table-container h5 {
+    text-align: center;
+    color: #1a5276;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.routing-table thead th {
+    background-color: #1f618d;
+    color: white;
+}
+
+.routing-table tbody td {
+    font-size: 0.9rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Hover and focus effects */
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    border-color: #3498db;
+}
+
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-5 { margin-top: 1.5rem; }
+.ml-2 { margin-left: 0.5rem; }
